@@ -4,7 +4,9 @@ A high-performance React Native Pinterest clone featuring a masonry layout home 
 
 ## 🎥 Demo
 
-https://github.com/user-attachments/assets/demo.mp4
+https://github.com/user-attachments/assets/c42c3c83-8d6a-421d-a1a8-aee1e041d306
+
+
 
 *Experience the smooth scrolling, masonry layout, and smart video playback in action*
 
