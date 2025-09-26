@@ -1,20 +1,21 @@
 import { FlashList, FlashListRef } from "@shopify/flash-list";
-import React, { useCallback, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   StatusBar,
   StyleSheet
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { data } from './data';
-import Header from './Header';
-import PinterestItem from './PinterestItem';
-import { Item } from './types';
+import { data } from '../components/data';
+import Header from '../components/Header';
+import PinterestItem from '../components/PinterestItem';
+import { Item } from '../components/types';
+import { WebImages } from "react-native-nitro-web-image";
 
 
 const GAP = 8;
 const COLS = 2;
 
-export default function PinterestHome() {
+export default function Home() {
   const items = useMemo(() => data, []);
   const [visibleItems, setVisibleItems] = useState<Set<string>>(new Set());
 
@@ -35,7 +36,6 @@ export default function PinterestHome() {
     itemVisiblePercentThreshold: 50, // Item is considered visible when 50% is visible
     minimumViewTime: 100, // Minimum time in ms an item should be visible
   }), []);
-
 
 
   return (

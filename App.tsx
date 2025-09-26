@@ -1,6 +1,6 @@
 import React from 'react';
-import PinterestHome from './components/PinterestHome';
+import Routes from './src/navigations/Routes';
 
 export default function App() {
-  return <PinterestHome />;
+  return <Routes />;
 }
